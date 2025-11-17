@@ -7,7 +7,11 @@ A Laravel package providing reusable artisan commands for common development tas
 You can install the package via composer:
 
 ```bash
-composer require machus/laravel-artisan
+composer require machus/laravel-artisan:@dev
+composer dump-autoload
+php artisan clear-compiled
+php artisan optimize:clear
+
 ```
 
 The service provider will be automatically registered via Laravel's package discovery.
